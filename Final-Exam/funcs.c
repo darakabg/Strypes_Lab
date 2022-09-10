@@ -1,5 +1,7 @@
+#include "funcs.h"
 #include <stdio.h>
-#include <string.h>
+
+#define CHECKBIT(mask,bit) !!(mask & (1ull << (bit)))
 
 int getMostFrequentElement(int array[], int n) {
     int i, j, maxElement, count;
@@ -25,3 +27,4 @@ int printArray(char* array, int n){
         printf("%d ", array[i]);     
     }          
 }
+
